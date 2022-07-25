@@ -200,7 +200,7 @@ describe('Order Repository test', () => {
         expect(allOrders).toHaveLength(0)
     })
 
-    it.only('should update items from Order', async() => {
+    it('should update items from Order', async() => {
         const customerRepository = new CustomerRepository()
         const customer = new Customer("1", "Customer 1")
         const address = new Address('rua 1', 1, '123', 'SP')
